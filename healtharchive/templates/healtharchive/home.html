@@ -1,0 +1,205 @@
+{% extends "healtharchive/base.html" %}
+{% load static %}
+
+{% block csslink %}
+<link rel="stylesheet" type="text/css" href="{% static 'healtharchive/home.css' %}">
+{% endblock %}
+
+{% block title %}
+Wounded/ Get instant info on how to handle difficult medical situations when instant medical attention is not available.
+{% endblock %}
+
+{% block content %}
+
+<img class='wounded' src="{% static 'healtharchive/wounded.png' %}">
+
+<a style="color: transparent;" href="{% url 'products' %}">
+	<div class="go-products">
+		<img style="width: 50%; margin-left: 5px;" src="{% static 'healtharchive/products.png' %}">
+		<img style="width: 70%" src="{% static 'healtharchive/amazon_icon.png' %}">
+
+		<div class="blink">
+			<div class="plate p1"></div>
+			<div class="plate p2"></div>
+			<div class="plate p3"></div>
+		</div>
+
+	</div>
+</a>
+
+<a href="{% url 'human' %}">
+	<div class="human-health-care-archive">
+		<img style="width: 50%" src="{% static 'healtharchive/human_health_care_archive.png' %}">
+
+		<div class="nested-flex">
+			<div class="bar b1"></div>
+			<div class="bar b2"></div>
+			<div class="bar b3"></div>
+			<div class="bar b4"></div>
+			<div class="bar b5"></div>
+			<div class="bar b6"></div>
+		</div>
+
+		<div class="rotator1 ring">
+			<div class="rotator2 ring">
+				<div class="rotator3 ring">
+					<div class="rotator4 ring"></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</a>
+
+<div class="patient-hex0">
+	<div style="margin-top: 70%;" class="blink"> <!-- overriding for putting blinks at the bottom of THIS flex-hex -->
+		<div class="plate p1 hide"></div>
+		<div class="plate p2 hide"></div>
+		<div class="plate p3 hide"></div>
+	</div>
+</div>
+
+
+<div class="patient-hex1">
+	<div style="margin-top: 70%;" class="blink"> <!-- overriding for putting blinks at the bottom of THIS flex-hex -->
+		<div class="plate p1 hide"></div>
+		<div class="plate p2 hide"></div>
+		<div class="plate p3 hide"></div>
+	</div>
+</div>
+
+
+<div class="patient-hex2">
+	<div style="margin-top: 70%;" class="blink"> <!-- overriding for putting blinks at the bottom of THIS flex-hex -->
+		<div class="plate p1 hide"></div>
+		<div class="plate p2 hide"></div>
+		<div class="plate p3 hide"></div>
+	</div>
+</div>
+
+<!-- covid.JPG -->
+<a href="https://www.google.com/search?q=covid&oq=covid&aqs=chrome..69i57.3372j0j1&sourceid=chrome&ie=UTF-8" target="_blank">
+	<div class="patient-hex6">
+		<div style="margin-top: 70%;" class="blink"> <!-- overriding for putting blinks at the bottom of THIS flex-hex -->
+			<div class="plate p1 hide"></div>
+			<div class="plate p2 hide"></div>
+			<div class="plate p3 hide"></div>
+		</div>
+	</div>
+</a>
+
+<a href="{% url 'animal' %}">
+	<div class="animal-health-care-archive">
+		<img style="width: 50%" src="{% static 'healtharchive/animal_health_care_archive.png' %}">
+
+		<div class="nested-flex">
+			<div class="bar b6"></div>
+			<div class="bar b5"></div>
+			<div class="bar b4"></div>
+			<div class="bar b3"></div>
+			<div class="bar b2"></div>
+			<div class="bar b1"></div>
+		</div>
+
+		<div class="rotator1 ring">
+			<div class="rotator2 ring">
+				<div class="rotator3 ring">
+					<div class="rotator4 ring"></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</a>
+
+<div class="patient-hex3">
+	<div style="margin-top: 70%;" class="blink"> <!-- overriding for putting blinks at the bottom of THIS flex-hex -->
+		<div class="plate p1 hide"></div>
+		<div class="plate p2 hide"></div>
+		<div class="plate p3 hide"></div>
+	</div>
+</div>
+
+
+<div class="patient-hex4">
+	<div style="margin-top: 70%;" class="blink"> <!-- overriding for putting blinks at the bottom of THIS flex-hex -->
+		<div class="plate p1 hide"></div>
+		<div class="plate p2 hide"></div>
+		<div class="plate p3 hide"></div>
+	</div>
+</div>
+
+
+<div class="patient-hex5">
+	<div style="margin-top: 70%;" class="blink"> <!-- overriding for putting blinks at the bottom of THIS flex-hex -->
+		<div class="plate p1 hide"></div>
+		<div class="plate p2 hide"></div>
+		<div class="plate p3 hide"></div>
+	</div>
+</div>
+
+<a style="color: transparent;" href="{% url 'facts_archive' %}">
+	<div class="go-facts">
+		<img style="width: 30%" src="{% static 'healtharchive/health_facts.png' %}">
+
+		<div class="blink">
+			<div class="plate p1"></div>
+			<div class="plate p2"></div>
+			<div class="plate p3"></div>
+		</div>
+
+	</div>
+</a>
+
+<a style="color: transparent;" href="{% url 'onlinesale' %}">
+	<div class="go-sale">
+		<img style="width: 30%; margin-left: 5px; margin-top: 5%;" src="{% static 'healtharchive/onlinesale.png' %}">
+		<img style="width: 70%; margin-top: 14%; padding-bottom: 9%;" src="{% static 'healtharchive/amazon_icon.png' %}">
+
+		<div class="nested-flex">
+			<div class="bar b1"></div>
+			<div class="bar b2"></div>
+			<div class="bar b3"></div>
+			<div class="bar b4"></div>
+			<div class="bar b5"></div>
+			<div class="bar b6"></div>
+		</div>
+
+	</div>
+</a>
+
+
+<a style="color: transparent;" href="{% url 'checkout' %}">
+	<div class="check-out">
+		<img style="width: 45%; margin-left: 5px; margin-top: 5%;" src="{% static 'healtharchive/donation.png' %}">
+
+		<div class="blink">
+			<div class="plate p1"></div>
+			<div class="plate p2"></div>
+			<div class="plate p3"></div>
+		</div>
+
+	</div>
+</a>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="site-details">
+	<p>+WOUNDED</p>
+	<p>This is an <strong>advertisement free</strong> website that we have developed for you with the intentions of helping you in times of medical emergencies and urgencies <br>and where instant medical attention is not available to you. Now you do not have to waste time searching on the internet about <br>the ways to handle such situations if you are not a professional. <br><br>+WOUNDED has a compiled database of the most common injuries and diseases that humans and their pets are vulnerable to and the steps required on how to take care of those medical situations. This website is updated every week and has its own section of available-products that people can buy which are appropriate to human and animal health care.</p>
+</div>
+
+<div class="copyright">
+	<small>{{ year }} Copyright. All Rights Reserved.</small><br>
+</div>
+
+<a href="https://www.privacypolicygenerator.info/live.php?token=UQ5yGvtSuH6zWUyBCP3O6q06QX5lPcba" target="_blank">
+	<div class="privacypolicy">
+		<small><u>Privacy Policy</u></small><br>
+	</div>
+</a>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "healtharchive/base.html" %}
+{% load static %}
+
+{% block csslink %}
+<link rel="stylesheet" type="text/css" href="{% static 'healtharchive/human.css' %}">
+{% endblock %}
+
+{% block title %}
+Wounded/Human_ : Learn home remedies for taking care of wounds and unexpected symptoms and diseases. Also learn about your own psychology here.
+{% endblock %}
+
+{% block content %} <!-- PUT THE URL IN href='#' -->
+<a style="color: transparent;" href="{% url 'home' %}"><div class="go-home" title="go home_"><b><<</b></div></a>
+
+<a href="{% url 'human_injury_archive' %}">
+	<div class="injury-wound">
+		<img style="width: 40%" src="{% static 'healtharchive/h_injury_wound.png' %}">
+	</div>
+</a>
+
+<a href="{% url 'human_disease_archive' %}">
+	<div class="symptom-disease">
+		<img style="width: 55%" src="{% static 'healtharchive/h_symptom_disease.png' %}">
+	</div>
+</a>
+
+<a href="{% url 'human_psychology_archive' %}">
+	<div class="psychology">
+		<img style="width: 60%" src="{% static 'healtharchive/mental_consultation.png' %}">
+	</div>
+</a>
+
+<a style="color: transparent;" href="{% url 'home' %}"><div class="go-behind" title="go back_"><b><</b></div></a>
+{% endblock %}

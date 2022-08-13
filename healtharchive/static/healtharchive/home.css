@@ -1,0 +1,809 @@
+body {
+	margin: 0;
+	/*padding-top: 15px;
+	padding-bottom: 70px;*/
+	background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url('futuristic_bg.png'); /* for opacity without affecting child-elements */
+	background-size: cover;
+	background-attachment: fixed;
+	color: #FFFFFF;
+	font-family: sans-serif;
+	font-size: 14px;
+	scroll-behavior: smooth;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+
+.wounded {
+	width: 50%;
+	margin-top: 5%;
+}
+
+
+
+
+
+.go-products {
+	background: rgba(0, 0, 0, 0.5);
+	/*border: 0 solid #a62c2b;*/
+	width: 250px;
+	height: 200px;
+	margin-left: 5%;
+	margin-top: 40%;
+	clip-path: polygon(25% 0%, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 5px;
+	color: rgba(166, 44, 43, 1);
+}
+
+.go-products:hover {
+	background: rgba(0, 0, 0, 1);
+	cursor: pointer;
+}
+
+
+
+
+
+.go-facts {
+	background: rgba(0, 0, 0, 0.5);
+	/*border: 0 solid #a62c2b;*/
+	width: 250px;
+	height: 200px;
+	margin-left: 5%;
+	margin-top: 0%;
+	clip-path: polygon(25% 0%, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 5px;
+	color: rgba(166, 44, 43, 1);
+}
+
+.go-facts:hover {
+	background: rgba(0, 0, 0, 1);
+	cursor: pointer;
+}
+
+
+
+
+
+.go-sale {
+	background: rgba(0, 0, 0, 0.5);
+	/*border: 0 solid #a62c2b;*/
+	width: 250px;
+	height: 200px;
+	margin-left: 5%;
+	margin-top: 0%;
+	clip-path: polygon(25% 0%, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5px;
+	color: rgba(166, 44, 43, 1);
+}
+
+.go-sale:hover {
+	background: rgba(0, 0, 0, 1);
+	cursor: pointer;
+}
+
+
+
+
+
+.human-health-care-archive {
+	width: 250px;
+	height: 200px;
+	background: rgba(0, 0, 0, 0.5);
+	border: 0 solid #a62c2b;
+	margin-left: 5%;
+	margin-top: 0%;
+	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.human-health-care-archive:hover {
+	background: rgba(0, 0, 0, 1);
+	cursor: pointer;
+}
+
+
+
+
+
+.animal-health-care-archive {
+	width: 250px;
+	height: 200px;
+	background: rgba(0, 0, 0, 0.5);
+	border: 0 solid #a62c2b;
+	margin-left: 5%;
+	margin-top: -80%;
+	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.animal-health-care-archive:hover {
+	background: rgba(0, 0, 0, 1);
+	cursor: pointer;
+}
+
+
+
+
+
+.patient-hex3 {
+	display: none;
+}
+
+
+
+
+
+.patient-hex4 {
+	display: none;
+}
+
+
+
+
+
+.patient-hex5 {
+	display: none;
+}
+
+
+
+
+
+.check-out {
+	background: rgba(0, 0, 0, 0.5);
+	/*border: 0 solid #a62c2b;*/
+	width: 250px;
+	height: 200px;
+	margin-left: 5%;
+	margin-top: 0%;
+	clip-path: polygon(25% 0%, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 5px;
+	color: rgba(166, 44, 43, 1);
+}
+
+.check-out:hover {
+	background: rgba(0, 0, 0, 1);
+	cursor: pointer;
+}
+
+
+
+
+
+.blink {
+	width: 60px;
+	height: 10px;
+	background: transparent;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.plate {
+	width: 40%;
+	height: 50%;
+	background: transparent;
+	animation: twinkle 2s linear infinite;
+}
+
+.p1 {
+	animation-delay: 0s;
+}
+
+.p2 {
+	animation-delay: 0.2s;
+}
+
+.p2 {
+	animation-delay: 0.2s;
+}
+
+@keyframes twinkle {
+	0% {background: transparent;}
+	10% {background: #FFFFFF;}
+	15% {background: transparent;}
+	20% {background: #FFFFFF;}
+	25% {background: transparent;}
+}
+
+.hide {
+	display: none;
+}
+
+
+
+
+
+.nested-flex {
+	width: 80px;
+	height: 40px;
+	background: transparent;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.bar {
+	width: 6px;
+	height: 20px;
+	background: #FFFFFF;
+	animation: wave 1s ease-in-out infinite;
+}
+
+.b1 {
+	animation-delay: 0.1s
+}
+
+.b2 {
+	animation-delay: 0.6s
+}
+
+.b3 {
+	animation-delay: 0.4s
+}
+
+.b4 {
+	animation-delay: 0.2s
+}
+
+.b5 {
+	animation-delay: 0.5s
+}
+
+.b6 {
+	animation-delay: 0.3s
+}
+
+@keyframes wave {
+	0% {height: 20px;}
+	10% {height: 10px;}
+	20% {height: 1px;}
+	30% {height: 10px;}
+	40% {height: 20px;}
+}
+
+
+
+
+
+.ring {
+	animation: rotate 1.5s linear infinite;
+}
+
+.rotator1 {
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	border-radius: 50%;
+	border-left: 3px solid #FFFFFF;
+	border-right: 3px solid #FFFFFF;
+	border-top: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	padding: 2px;
+	animation-direction: normal;
+}
+
+.rotator2 {
+	width: 30px;
+	height: 30px;
+	background: transparent;
+	border-radius: 50%;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-top: 3px solid #FFFFFF;
+	border-bottom: 3px solid #FFFFFF;
+	padding: 2px;
+	animation-direction: alternate;
+	animation-delay: 1s;
+}
+
+.rotator3 {
+	width: 20px;
+	height: 20px;
+	background: transparent;
+	border-radius: 50%;
+	border-left: 3px solid #FFFFFF;
+	border-right: 3px solid #FFFFFF;
+	border-top: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	padding: 2px;
+	animation-direction: normal;
+}
+
+.rotator4 {
+	width: 10px;
+	height: 10px;
+	background: transparent;
+	border-radius: 50%;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-top: 3px solid #FFFFFF;
+	border-bottom: 3px solid #FFFFFF;
+	padding: 2px;
+	animation-direction: alternate;
+	animation-delay: 0.5s;
+}
+
+@keyframes rotate {
+	0% {transform: rotate(0deg);}
+	50% {transform: rotate(90deg);}
+	100% {transform: rotate(180deg);}
+}
+
+.site-details {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 10px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+
+
+
+
+.copyright {
+	color: #FFFFFF;
+	bottom: 0;
+	margin-top: 10%;
+}
+
+
+
+
+
+.privacypolicy {
+	color: #FFFFFF;
+	bottom: 0;
+}
+
+
+
+
+
+@media (min-width: 1024px) and (min-height: 700px), (orientation: landscape) {
+
+	body {
+		margin: 0;
+		/*padding-top: 15px;
+		padding-bottom: 70px;*/
+		background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url('futuristic_bg.png'); /* for opacity without affecting child-elements */
+		background-size: cover;
+		background-attachment: fixed;
+		color: #FFFFFF;
+		font-family: sans-serif;
+		font-size: 14px;
+		scroll-behavior: smooth;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+
+
+
+	.wounded {
+		width: 30%;
+		margin-top: 10px;
+	}
+
+	
+
+
+
+	.hide {
+		display: inline;
+	}
+
+
+
+
+
+	.go-products {
+		background: rgba(0, 0, 0, 0.5);
+		/*border: 0 solid #a62c2b;*/
+		width: 250px;
+		height: 200px;
+		margin-left: 226px;
+		margin-top: 60px;
+		clip-path: polygon(25% 0%, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding: 5px;
+		color: rgba(166, 44, 43, 1);
+	}
+
+	.go-products:hover {
+		background: rgba(0, 0, 0, 1);
+		cursor: pointer;
+	}
+
+
+
+
+
+	.go-facts {
+		background: rgba(0, 0, 0, 0.5);
+		/*border: 0 solid #a62c2b;*/
+		width: 145px;
+		height: 113px;
+		margin-right: 70px;
+		margin-top: -57px;
+		clip-path: polygon(25% 0%, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding: 5px;
+		color: rgba(166, 44, 43, 1);
+	}
+
+	.go-facts:hover {
+		background: rgba(0, 0, 0, 1);
+		cursor: pointer;
+	}
+
+
+
+
+
+	.human-health-care-archive {
+		width: 250px;
+		height: 200px;
+		background: rgba(0, 0, 0, 0.5);
+		border: 0 solid #a62c2b;
+		margin-right: 200px;
+		margin-top: -98px;
+		clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-around;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.human-health-care-archive:hover {
+		background: rgba(0, 0, 0, 1);
+		cursor: pointer;
+	}
+
+
+
+
+
+	.patient-hex0 {
+		width: 250px;
+		height: 200px;
+		background: linear-gradient(rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)), url('patients0.jpg');
+		background-size: 120%;
+		border: 0 solid #a62c2b;
+		margin-right: 538px;
+		margin-top: -97px;
+		clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-around;
+		padding-bottom: 10px;
+	}
+
+	.patient-hex0:hover {
+		background: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, 0)), url('patients0.jpg');
+		background-size: 120%;
+		cursor: pointer;
+	}
+
+
+
+
+
+	.patient-hex1 {
+		width: 250px;
+		height: 200px;
+		background: linear-gradient(rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)), url('patients1.jpg');
+		background-size: 120%;
+		border: 0 solid #a62c2b;
+		margin-right: 925px;
+		margin-top: -300px;
+		clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-around;
+		padding-bottom: 10px;
+	}
+
+	.patient-hex1:hover {
+		background: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, 0)), url('patients1.jpg');
+		background-size: 120%;
+		cursor: pointer;
+	}
+
+
+
+
+
+	.patient-hex2 {
+		width: 250px;
+		height: 200px;
+		background: linear-gradient(rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)), url('patients2.jpg');
+		background-size: cover;
+		border: 0 solid #a62c2b;
+		margin-right: 540px;
+		margin-top: -303px;
+		clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-around;
+		padding-bottom: 10px;
+	}
+
+	.patient-hex2:hover {
+		background: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, 0)), url('patients2.jpg');
+		background-size: cover;
+		cursor: pointer;
+	}
+
+
+
+
+
+	.patient-hex6 { /* covid.JPG */
+		width: 250px;
+		height: 200px;
+		background: linear-gradient(rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.1)), url('covid.JPG');
+		background-size: cover;
+		border: 0 solid #a62c2b;
+		margin-right: 923px;
+		margin-top: 105px;
+		clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-around;
+		padding-bottom: 10px;
+	}
+
+	.patient-hex6:hover {
+		background: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, 0)), url('covid.JPG');
+		background-size: cover;
+		cursor: pointer;
+	}
+
+
+
+
+
+	.animal-health-care-archive {
+		width: 250px;
+		height: 200px;
+		background: rgba(0, 0, 0, 0.5);
+		border: 0 solid #a62c2b;
+		margin-left: 230px;
+		margin-top: -305px;
+		clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-around;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.animal-health-care-archive:hover {
+		background: rgba(0, 0, 0, 1);
+		cursor: pointer;
+	}
+
+
+
+
+
+	.patient-hex3 {
+		width: 250px;
+		height: 200px;
+		background: linear-gradient(rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)), url('patients3.jpg');
+		background-size: cover;
+		border: 0 solid #a62c2b;
+		margin-right: -615px;
+		margin-top: -407px;
+		clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-around;
+		padding-bottom: 10px;
+	}
+
+	.patient-hex3:hover {
+		background: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, 0)), url('patients3.jpg');
+		background-size: cover;
+		cursor: pointer;
+	}
+
+
+
+
+
+	.patient-hex4 {
+		width: 250px;
+		height: 200px;
+		background: linear-gradient(rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)), url('patients4.jpg');
+		background-size: 45%;
+		border: 0 solid #a62c2b;
+		margin-right: -615px;
+		margin-top: 5px;
+		clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-around;
+		padding-bottom: 10px;
+	}
+
+	.patient-hex4:hover {
+		background: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, 0)), url('patients4.jpg');
+		background-size: 45%;
+		cursor: pointer;
+	}
+
+
+
+
+
+	.patient-hex5 {
+		width: 250px;
+		height: 200px;
+		background: linear-gradient(rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2)), url('patients5.jpg');
+		background-size: 60%;
+		border: 0 solid #a62c2b;
+		margin-right: -1000px;
+		margin-top: -302px;
+		clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-around;
+		padding-bottom: 10px;
+	}
+
+	.patient-hex5:hover {
+		background: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, 0)), url('patients5.jpg');
+		background-size: 60%;
+		cursor: pointer;
+	}
+
+
+
+
+
+	.site-details {
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-top: 10px;
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+
+
+
+
+
+	.copyright {
+		color: #FFFFFF;
+		bottom: 0;
+		margin-top: 100px;
+	}
+
+
+
+
+
+	.privacypolicy {
+		color: #FFFFFF;
+		bottom: 0;
+	}
+
+
+
+
+
+	.go-sale {
+		background: rgba(0, 0, 0, 0.5);
+		/*border: 0 solid #a62c2b;*/
+		width: 250px;
+		height: 200px;
+		margin-left: -395px;
+		margin-top: -50px;
+		clip-path: polygon(25% 0%, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 5px;
+		color: rgba(166, 44, 43, 1);
+	}
+
+	.go-sale:hover {
+		background: rgba(0, 0, 0, 1);
+		cursor: pointer;
+	}
+
+
+
+
+
+	.check-out {
+		background: rgba(0, 0, 0, 0.5);
+		/*border: 0 solid #a62c2b;*/
+		width: 250px;
+		height: 200px;
+		margin-left: -30%;
+		margin-top: -40%;
+		clip-path: polygon(25% 0%, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding: 5px;
+		color: rgba(166, 44, 43, 1);
+	}
+
+	.check-out:hover {
+		background: rgba(0, 0, 0, 1);
+		cursor: pointer;
+	}
+
+}

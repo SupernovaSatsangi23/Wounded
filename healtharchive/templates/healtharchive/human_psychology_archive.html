@@ -1,0 +1,50 @@
+{% extends "healtharchive/base.html" %}
+{% load static %}
+
+{% block csslink %}
+<link rel="stylesheet" type="text/css" href="{% static 'healtharchive/human_psychology_archive.css' %}">
+{% endblock %}
+
+{% block title %}
+Wounded/Human_Psychology_Archive_
+{% endblock %}
+
+{% block content %}
+<div class="sec1">
+<img class="i" src="{% static 'healtharchive/human_psychology_archive.png' %}">
+</div>
+<br>
+
+<div class="sec2">
+<a style="color: transparent;" href="{% url 'human' %}"><div class="go-behind" title="go back_"><b><</b></div></a>
+<a style="color: transparent;" href="{% url 'home' %}"><div class="go-home" title="go home_"><b><<</b></div></a>
+</div>
+
+<br>
+<div class="sec3">
+	{% for hpa in humanpsychologyarchive %}
+		<a class="btn case" data-toggle="collapse" href="#collapse{{ forloop.counter0 }}" role="button" aria-expanded="false" aria-controls="collapse{{ forloop.counter0 }}">
+	    	<p>{{ hpa.name }}_</p>
+		</a>
+		<div class="collapse" id="collapse{{ forloop.counter0 }}">
+	  		<div class="card card-body">
+	  			<p style="position: absolute; right: 10px; top: 2px;">click and drag the bottom-right to resize_</p>
+	  			<br>
+	  			<br>
+
+	  			{% if hpa.img != "" %}
+	  				<img class="collapse-img" src="{{ hpa.img.url }}" alt="{{ hpa.name }}" width="">
+	  			{% endif %}
+
+	  			{% if hpa.solution != "" %}
+	    		<p><strong>Solution : </strong><br>{{ hpa.solution | safe | linebreaks }}</p>
+	    		{% endif %}
+
+	    		{% if hpa.description != "" %}
+	    		<p><strong>Description : </strong><br>{{ hpa.description | safe | linebreaks }}</p>
+	    		{% endif %}
+	  		</div>
+		</div>
+	{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <link rel="icon" href="{% static 'healtharchive/aid.png' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Giving you the information on how to handle medical urgencies when immediate medical attention is not available. Whether you are wounded physically, or you have a wounded dog, or any other pet and don't know what to do until you get a veteranarian or a doctor, go through this site, it provides everything you need to do to take care of the situation gently and acutely. It teaches about wounded kness, physical injuries in all kinds of ages in humans and animals and pets. Wounded will also help you understand your disease if you have one and ways to take care of yourself or your pet. It also provide facts for mental consultations and therapy. Also it saves your time of searching suitable and appropriate products on amazon by providing all the products a patient or victim can need in times of urgencies.">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script src="https://js.stripe.com/v3/"></script>
+
+    {% block csslink %}
+    {% endblock %}
+
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <script src="https://js.stripe.com/v3/"></script>
+
+    {% block script %}
+
+    {% endblock %}
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            {% block jquery %}
+            {% endblock %}
+        });
+    </script>
+</body>
+</html>

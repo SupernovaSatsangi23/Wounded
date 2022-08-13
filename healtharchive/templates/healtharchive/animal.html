@@ -1,0 +1,28 @@
+{% extends "healtharchive/base.html" %}
+{% load static %}
+
+{% block csslink %}
+<link rel="stylesheet" type="text/css" href="{% static 'healtharchive/animal.css' %}">
+{% endblock %}
+
+{% block title %}
+Wounded/Animal_ : Learn home remedies to treat your pet's wounds or symptoms before you get the adequate medical attention for your pets.
+{% endblock %}
+
+{% block content %} <!-- PUT THE URL IN href='#' -->
+<a style="color: transparent;" href="{% url 'home' %}"><div class="go-home" title="go home_"><b><<</b></div></a>
+
+<a href="{% url 'animal_injury_archive' %}">
+	<div class="injury-wound">
+		<img style="width: 60%" src="{% static 'healtharchive/a_injury_wound.png' %}">
+	</div>
+</a>
+
+<a href="{% url 'animal_disease_archive' %}">
+	<div class="symptom-disease">
+		<img style="width: 80%" src="{% static 'healtharchive/a_symptom_disease.png' %}">
+	</div>
+</a>
+
+<a style="color: transparent;" href="{% url 'home' %}"><div class="go-behind" title="go back_"><b><</b></div></a>
+{% endblock %}
