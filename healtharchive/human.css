@@ -1,0 +1,120 @@
+body {
+	margin: 0;
+	padding-top: 15px;
+	padding-bottom: 70px;
+	background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('blood.jpg'); /* for opacity without affecting child-elements */
+	background-size: cover;
+	background-attachment: fixed;
+	color: #FFFFFF;
+	font-family: "Times New Roman", monospace;
+	font-size: 15px;
+	scroll-behavior: smooth;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+
+.go-home {
+	background: rgba(166, 44, 43, 0.5);
+	border: 0 solid #a62c2b;
+	width: 67px;
+	height: 50px;
+	margin-left: 128px;
+	margin-top: 160px;
+	clip-path: polygon(25% 0%, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgba(166, 44, 43, 1);
+}
+
+.go-home:hover {
+	background: rgba(166, 44, 43, 1);
+	cursor: pointer;
+}
+
+
+
+
+
+.go-behind {
+	background: rgba(166, 44, 43, 0.5);
+	border: 0 solid #a62c2b;
+	width: 67px;
+	height: 50px;
+	margin-left: 135px;
+	margin-top: -72px;
+	clip-path: polygon(25% 0%, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgba(166, 44, 43, 1);
+}
+
+.go-behind:hover {
+	background: rgba(166, 44, 43, 1);
+	cursor: pointer;
+}
+
+
+
+
+
+.injury-wound {
+	width: 200px;
+	height: 150px;
+	background: rgba(166, 44, 43, 0.5);
+	border: 0 solid #a62c2b;
+	margin-right: 111px;
+	margin-top: -69px;
+	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.injury-wound:hover {
+	background: rgba(166, 44, 43, 1);
+	cursor: pointer;
+}
+
+.symptom-disease {
+	width: 200px;
+	height: 150px;
+	background: rgba(166, 44, 43, 0.5);
+	border: 0 solid #a62c2b;
+	margin-left: 200px;
+	margin-top: -74px;
+	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.symptom-disease:hover {
+	background: rgba(166, 44, 43, 1);
+	cursor: pointer;
+}
+
+.psychology {
+	width: 200px;
+	height: 150px;
+	background: rgba(166, 44, 43, 0.5);
+	border: 0 solid #a62c2b;
+	margin-right: 109px;
+	margin-top: -72px;
+	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.psychology:hover {
+	background: rgba(166, 44, 43, 1);
+	cursor: pointer;
+}

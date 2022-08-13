@@ -1,0 +1,144 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.10)), url('blood_cells.jpg'); /* for opacity without affecting child-elements */
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: repeat-x;
+	color: #FFFFFF;
+	display: block;
+	font-family: "Times New Roman", monospace;
+	font-size: 15px;
+	scroll-behavior: smooth;
+}
+
+
+
+
+
+p {
+	margin-left: 10px;
+	font-family: "Times New Roman", monospace;
+	font-size: 16px;
+}
+
+a p {
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+
+
+
+
+.sec1 {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+img.i {
+	width: 20%;
+	margin-left: 40%;
+	padding: 20px 0;
+	display: flex;
+	flex-shrink: 0;
+}
+
+
+
+
+
+.sec2 {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+
+
+
+
+.go-behind {
+	background: rgba(166, 44, 43, 0.4);
+	/*border: 0 solid #a62c2b;*/
+	width: 60px;
+	height: 50px;
+	float: left;
+	/*margin-left: 715px;
+	margin-top: 25px;*/
+	clip-path: polygon(25% 0%, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgba(166, 44, 43, 1);
+}
+
+.go-behind:hover {
+	background: rgba(166, 44, 43, 1);
+	cursor: pointer;
+}
+
+
+
+
+
+.go-home {
+	background: rgba(166, 44, 43, 0.4);
+	/*border: 0 solid #a62c2b;*/
+	width: 60px;
+	height: 50px;
+	/*margin-left: 665px;
+	margin-top: -25px;*/
+	clip-path: polygon(25% 0%, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgba(166, 44, 43, 1);
+}
+
+.go-home:hover {
+	background: rgba(166, 44, 43, 1);
+	cursor: pointer;
+}
+
+
+
+
+
+.sec3 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding-right: 50px;
+	padding-bottom: 100px;
+}
+
+.collection1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
+	padding-right: 50px;
+	padding-left: 300px;
+}
+
+.collection2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-end;
+}
